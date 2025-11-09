@@ -1,0 +1,168 @@
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f0f4f8, #dfe9f3);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===== Cart Summary ===== */
+#cart-summary {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#cart-summary p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#cart-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-summary li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== Buttons ===== */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+button img {
+  height: 24px;
+  width: auto;
+}
+
+/* ===== Specific Button Colors ===== */
+button:nth-of-type(1) {
+  background: linear-gradient(to right, #d6006e, #ff4f9f);
+  color: white;
+}
+
+button:nth-of-type(2) {
+  background: linear-gradient(to right, #ff6a00, #ffb347);
+  color: white;
+}
+
+button:nth-of-type(3) {
+  background: linear-gradient(to right, #007bff, #66b2ff);
+  color: white;
+}
+
+/* ===== Payment Boxes ===== */
+.cod-box, .bkash-box, .nagad-box, .order-summary {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    width: 100%;
+    padding: 15px;
+  }
+
+  button img {
+    height: 20px;
+  }
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    width: 80%;
+    font-size: 15px;
+    padding: 11px 0;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    padding: 18px;
+  }
+
+  button img {
+    height: 22px;
+  }
+}
+
+/* Tablets / Desktop */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  button {
+    width: 250px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    padding: 20px;
+  }
+
+  button img {
+    height: 24px;
+  }
+}

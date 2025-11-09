@@ -1,0 +1,202 @@
+/* ===== Base Styles ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ===== Cart Items ===== */
+.cart-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.cart-item span {
+  font-size: 16px;
+  color: #666;
+  margin-left: 10px;
+}
+
+/* ===== Total & Place Order ===== */
+#total {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  color: #222;
+}
+
+#place-order {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#place-order:hover {
+  background-color: #218838;
+}
+
+/* ===== Empty Message ===== */
+.empty-message {
+  font-size: 18px;
+  color: #888;
+  margin-top: 40px;
+}
+
+/* ===== Payment Boxes / Order Summary ===== */
+.cod-box, .bkash-box, .nagad-box, .order-summary {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ===== Inputs / Buttons ===== */
+input[type="text"], button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+/* ===== Responsive Media Queries ===== */
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 15px;
+  }
+
+  .cart-item span,
+  .cart-item strong {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  #place-order {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    width: 100%;
+    padding: 15px;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .cart-item {
+    padding: 14px 18px;
+  }
+
+  #place-order {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    padding: 18px;
+  }
+
+  input[type="text"], button {
+    font-size: 15px;
+  }
+}
+
+/* Tablets / Desktop */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .cart-item {
+    padding: 15px 20px;
+  }
+
+  #place-order {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .cod-box, .bkash-box, .nagad-box, .order-summary {
+    padding: 20px;
+  }
+
+  input[type="text"], button {
+    font-size: 16px;
+  }
+}
