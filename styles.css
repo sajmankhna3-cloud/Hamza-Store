@@ -220,81 +220,87 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-/* ===== Media Queries for Hamza-Store ===== */
+/* ===== Responsive Media Queries ===== */
 
-/* ----- Tablets ----- */
+/* ----- Small Tablets / Large Phones ----- */
 @media (max-width: 1024px) {
-  /* Header adjustments */
-  .site-header {
+  .hamkra-header {
     flex-direction: column;
     align-items: center;
-    padding: 15px 20px;
-  }
-  
-  .nav {
-    margin-top: 10px;
+    padding: 12px 20px;
   }
 
-  /* Product cards */
-  .product-card {
-    width: 48%; /* 2 in a row instead of 3-4 */
-    margin: 1%;
+  .hamkra-header .search-bar input {
+    width: 200px;
   }
-  
-  /* Buttons */
-  .btn {
+
+  .product-grid {
+    gap: 20px;
+    padding: 0 15px 30px 15px;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+
+  .product-card h3 {
+    font-size: 18px;
+  }
+
+  .product-card p {
+    font-size: 0.95rem;
+  }
+
+  .buy-btn, .add-to-wishlist {
     padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
-/* ----- Small Tablets / Large Phones ----- */
+/* ----- Tablets / Portrait Mode ----- */
 @media (max-width: 768px) {
-  .site-header {
-    padding: 10px 15px;
+  .hamkra-header .search-bar input {
+    width: 180px;
   }
 
-  .nav {
-    flex-direction: column;
-    gap: 10px;
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .product-card {
-    width: 100%; /* Stack products */
-    margin-bottom: 20px;
+  .product-card img {
+    height: 150px;
   }
 
-  .product-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
+  .product-card h3 {
+    font-size: 17px;
   }
 }
 
 /* ----- Mobile Phones ----- */
 @media (max-width: 480px) {
-  body {
-    font-size: 14px; /* Slightly smaller text */
+  .hamkra-header {
+    padding: 10px 12px;
   }
 
-  .site-header {
-    padding: 8px 10px;
+  .hamkra-header .store-logo img {
+    height: 40px;
   }
 
-  .product-card {
-    padding: 10px;
+  .hamkra-header .search-bar input {
+    width: 140px;
+    padding: 8px 12px;
   }
 
-  .product-title {
-    font-size: 16px;
+  .hamkra-header .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .product-price {
-    font-size: 14px;
+  .hamkra-header .nav-links a {
+    margin: 8px 0;
   }
-}
+
+  .product-g
+
 
 
