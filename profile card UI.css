@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #d3d3d3;
+}
+
+.card {
+    width: 340px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.top {
+    border: 10px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 140px;
+    background: url('img.jpg') center/cover no-repeat;
+}
+
+.follow {
+    cursor: pointer;
+
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 0 20px;
+    margin-top: -38px;
+}
+
+.avatar {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 999;
+    background: url('image.jpg') center/cover no-repeat;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.exp {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.bar {
+    flex: 1;
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff6b6b, #ffb86b, #ffd36b, #9be15d, #3fd1c9, #6b8cff);
+    margin-left: 6px;
+}
+
+.info {
+    padding: 18px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.desc {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #0000000d;
+    border-bottom: 1px solid #0000000d;
+    padding: 16px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.num {
+    font-weight: 700;
+    font-size: 15px;
+    color: #111827;
+}
+
+.label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 380px) {
+    .card {
+        width: 90%;
+    }
+}
